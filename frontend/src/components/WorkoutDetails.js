@@ -7,7 +7,7 @@ const WorkoutDetails = ({ workout }) => {
     const { user } = useAuthContext()
 
     if (!user) {
-        return 
+        return
     }
     const handleClick = async () => {
         const response = await fetch('/api/workouts/' + workout._id, {
